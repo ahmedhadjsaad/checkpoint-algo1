@@ -1,0 +1,22 @@
+ALGORITHM chekpoint
+VAR
+    ph : type STRING;
+    nbmots : INTEGER := 0;
+    nbespace : INTEGER := 0;
+    nbvoyelles : INTEGER := 0;
+BEGIN
+    for (j=0;j<ph.length;j++){
+       IF (ph[j] == " ") THEN
+           nbespace := nbespace + 1;
+       END_IF
+    }
+
+    nbmots := nbespace + 1 
+    
+
+    for (i=0;i<ph.length;i++) {
+        IF (ph[i]==a or ph[i]==e or ph[i]==y or ph[i]==u or ph[i]==i or ph[i]==o or ph[i]==A or ph[i]==E or ph[i]==Y or ph[i]==U or ph[i]==I or ph[i]==O  ) THEN
+            nbvoyelles := nbvoyelles + 1;
+        END_IF
+    }
+END
